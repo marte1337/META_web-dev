@@ -1,0 +1,19 @@
+h1 {
+    color:rgb(126, 99, 163);
+}
+
+#header1 {
+    color:antiquewhite
+}
+
+div h1 {
+    color:darkolivegreen;
+}
+
+#blog div h1 {
+    color:aqua
+}
+
+#blog > h1 {
+    color:chartreuse
+}
