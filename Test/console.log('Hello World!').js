@@ -945,3 +945,4 @@ better.calculate(); // Result: 6
 
     var result = new Friend();
     result.sayHello();
+
