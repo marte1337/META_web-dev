@@ -1110,7 +1110,8 @@ better.calculate(); // Result: 6
 
 
 
-//For of loops and objects:
+/*  
+    //For of loops and objects:
 //a for of loop can be run on arrays to loop over objects; 
 //a for of loop cannot work on an object directly, since an object is not iterable.
 //Contrary to objects, arrays are iterable: 
@@ -1144,3 +1145,24 @@ var clothingItem = {
 for(key of Object.keys(clothingItem) ) {
     console.log(key, ":", clothingItem[key])
 }
+//accessing the object's member using the brackets notation with clothingItem[key] 
+
+*/
+
+/* let's code a function declaration that randomly assigns either the string speed or 
+the string color to a variable name, and then build an object that has only two keys: 
+a speed key and a color key.
+
+function testBracketsDynamicAccess() {
+  var dynamicKey = Math.random() > 0.5 ? "speed" : "color";
+
+    var drone = {
+      speed: 15,
+      color: "orange"
+    }
+
+    console.log(drone[dynamicKey]);
+}
+testBracketsDynamicAccess();
+
+*/
