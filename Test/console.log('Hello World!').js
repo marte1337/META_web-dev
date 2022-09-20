@@ -350,4 +350,109 @@ function styleAndCelebrate(color, background, fontSize, txt, reason) {
 styleAndCelebrate('ef7c8e', 'fae8e0', '30px', 'You made it!','champions')
 
 */
+/*
 
+        //Template literals (`` + ${...}):
+        const string1 = "A string primitive";
+        const string2 = 'Also a string primitive';
+        const string3 = `Yet another string primitive`;
+
+//Differences between a template (``) and regular ("", '') string: 
+
+    //First, it allows for variable interpolation:
+
+    let greet = "Hello";
+    let place = "World";
+    console.log(`${greet} ${place} !`)
+
+console.log(`${string1} is something different that ${string3} !`)
+
+//second, template strings can span multiple lines
+
+let multiline = `
+    Using ES6
+    backticks,
+    multi-line
+    strings are
+    possible"
+    `
+console.log(multiline)
+
+
+//third, interpolate variables because template literals allows for expression evaluation
+
+console.log(`${1 + 1 + 1 + 1 + 1} stars!`)
+
+*/
+
+
+        //Data Structure: Objects, Arrays, Maps, Sets
+
+//OBJECTS: object is unaltered, noniterable collection of key value pairs and
+//you use objects when you need to store and later access a value under a KEY. 
+
+//ARRAYS: an ordered iterable collection of values and you use arrays when you need 
+//to store and later access a value under an INDEX.
+//You only use the index to access the specific value stored in the array.
+//When working with arrays, it's common to use a loop, such as a for loop to access and edit the data. 
+
+//MAPS: A map is like an array because it's iterable. However, it consists of key value pairs.
+//It's important not to confuse a map with an object. With maps any value can be used as a key.
+//With objects, keys can only be strings or symbols. 
+
+//SETS: A set is another collection where each item in the collection must be unique.
+//For example, if you try to add a non unique item to a set, this operation will simply not be run.
+//In other words, no errors will be thrown and no updates will be made to a set. 
+
+
+//------Working with ARRAYS:--------
+
+//Expl. finding an averade grade with an array:
+
+const grades = [75, 90, 95, 85, 80, 85]
+let gradesSum = 0
+
+for (let i = 0; i < grades.length; i++) {
+    gradesSum += grades[i];
+    
+}
+
+console.log(`${grades} ergibt ${gradesSum}`)
+console.log("Average grades:", gradesSum / grades.length)
+
+
+//3 important built-in methods of arrays are: forEach, filter and map.
+
+
+//THE forEach() METHOD: a handy method that allows you to loop over each member. 
+
+const fruits = ['kiwi','mango','apple','pear']
+
+function appendIndex(fruit, index) {
+    console.log(`${index}. ${fruit}`)
+}
+fruits.forEach(appendIndex)
+
+//the forEach() method accepts a function that will work on each array item. 
+//That function's first parameter is the current array item itself, 
+//and the second (optional) parameter is the index.
+
+//Very often, the function that the forEach() method needs to use is passed in 
+//directly into the method call, like this:
+
+const veggies = ['onion', 'garlic', 'potato'];
+veggies.forEach( function(veggie, index) {
+    console.log(`${index}. ${veggie}`);
+})
+
+
+//THE filter() METHOD: filters your arrays based on a specific test. Those array items that pass the test are returned.
+//the filter() method also accepts a function and that function performs some work on each of the items in the array.
+const nums = [0,10,20,30,40,50];
+nums.filter( function(num) {
+    return num > 20;
+}) //returned value: [30,40,50]
+
+
+//THE map METHOD: is used to map each array item over to another array's item, 
+//based on whatever work is performed inside the function that is passed-in to the map as a parameter. 

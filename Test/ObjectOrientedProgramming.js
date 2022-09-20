@@ -1166,3 +1166,31 @@ function testBracketsDynamicAccess() {
 testBracketsDynamicAccess();
 
 */
+
+
+        //FOR OF/FOR IN - LOOPS
+
+const car = {
+    engine: true,
+    steering: true,
+    speed: "slow"
+}
+
+const sportsCar = Object.create(car);
+sportsCar.speed = "fast";
+console.log("The sportsCar object:", sportsCar)
+
+//for-in is unreliable: iterating over object AND prototype
+for (properties in sportsCar) {
+    console.log("for-in:", properties)
+} //speed, engine, steering
+
+//for-of is reliable: iterting over own properties only
+for (properties of Object.keys(sportsCar)) {
+    console.log("for-of:", properties + ":", sportsCar[properties])
+} //speed: fast (Prototype wird nicht beachtet)
+
+//for-in Test:
+for (properties in Object.keys(sportsCar)) {
+    console.log("for-in mit keys-method:", properties + ":", sportsCar[properties])
+} //0: undefined
