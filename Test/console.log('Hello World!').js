@@ -386,7 +386,7 @@ console.log(`${1 + 1 + 1 + 1 + 1} stars!`)
 */
 
 
-        //Data Structure: Objects, Arrays, Maps, Sets
+        //------DATA STRUCTURES: Objects, Arrays, Maps, Sets-------
 
 //OBJECTS: object is unaltered, noniterable collection of key value pairs and
 //you use objects when you need to store and later access a value under a KEY. 
@@ -448,6 +448,7 @@ veggies.forEach( function(veggie, index) {
 
 //THE filter() METHOD: filters your arrays based on a specific test. Those array items that pass the test are returned.
 //the filter() method also accepts a function and that function performs some work on each of the items in the array.
+
 const nums = [0,10,20,30,40,50];
 nums.filter( function(num) {
     return num > 20;
@@ -456,3 +457,61 @@ nums.filter( function(num) {
 
 //THE map METHOD: is used to map each array item over to another array's item, 
 //based on whatever work is performed inside the function that is passed-in to the map as a parameter. 
+
+nums.map( function(num) {
+    return num / 10
+}) //returned value: [0,1,2,3,4,5]
+
+
+//-------Working with OBJECTS-------
+
+//EXPL. This task is to convert an object to an array:
+
+const result = [];
+const drone = {
+    speed: 100,
+    color: 'yellow'
+}
+const droneKeys = Object.keys(drone);
+droneKeys.forEach( function(key) {
+    result.push(key, drone[key])
+})
+console.log(result)
+
+
+//-------Working with MAPS------
+
+//To make a new Map, you can use the Map constructor: new Map()
+
+//A map can feel very similar to an object in JS. However, it doesn't have inheritance.
+//No prototypes! This makes it useful as a data storage.
+
+let bestBoxers = new Map();
+bestBoxers.set(1, "The Champion");
+bestBoxers.set(2, "The Runner-up");
+bestBoxers.set(3, "The third place");
+
+console.log(bestBoxers) //Map(3) {1 => 'The Champion', 2 => 'The Runner-up', 3 => 'The third place'}
+
+//To get a specific value, you need to use the get() method. For example:  
+console.log(bestBoxers.get(1)) // 'The Champion'
+
+
+//--------Working with SETS-----------
+
+//A set is a collection of unique values.
+//To build a new set, you can use the Set constructor: new Set()
+
+//The Set constructor can, for example, accept an array.
+//This means that we can use it to quickly filter an array for unique members.
+
+const repetitiveFruits = ['apple','pear','apple','pear','plum', 'apple'];
+const uniqueFruits = new Set(repetitiveFruits);
+console.log(uniqueFruits) //{'apple', 'pear', 'plum'}
+
+
+//--------Other data structures in JavaScript
+
+//Besides the built-in data structures in JavaScript, it's possible to build non-native, custom data structures.
+//These data structures come built-in natively in some other programming languages  or even those other programming languages don't support them natively.
+//Some more advanced data structures that have not been covered include: Queues, Linked lists (singly-linked and doubly-linked), Trees, Graphs
