@@ -386,7 +386,7 @@ console.log(`${1 + 1 + 1 + 1 + 1} stars!`)
 */
 
 
-        //------DATA STRUCTURES: Objects, Arrays, Maps, Sets-------
+/*        //------DATA STRUCTURES: Objects, Arrays, Maps, Sets-------
 
 //OBJECTS: object is unaltered, noniterable collection of key value pairs and
 //you use objects when you need to store and later access a value under a KEY. 
@@ -515,3 +515,68 @@ console.log(uniqueFruits) //{'apple', 'pear', 'plum'}
 //Besides the built-in data structures in JavaScript, it's possible to build non-native, custom data structures.
 //These data structures come built-in natively in some other programming languages  or even those other programming languages don't support them natively.
 //Some more advanced data structures that have not been covered include: Queues, Linked lists (singly-linked and doubly-linked), Trees, Graphs
+
+*/
+
+
+
+        //-------Using SPREAD and REST operators------------
+
+//Join arrays, objects using the rest/spread(?) operator:
+
+const fruits = ['apple', 'pear', 'plum']
+const berries = ['blueberry', 'strawberry']
+const fruitsAndBerries = [...fruits, ...berries] // concatenate
+console.log(fruitsAndBerries); // outputs a single array 
+//['apple', 'pear', 'plum', 'blueberry', 'strawberry']
+
+//It's also easy to join objects:  
+const flying = { wings: 2 }
+const car = { wheels: 4 }
+const flyingCar = {...flying, ...car}
+console.log(flyingCar) // {wings: 2, wheels: 4}
+
+
+//Add new members to arrays without using the push() method:
+let veggies = ['onion', 'parsley'];
+veggies = [...veggies, 'carrot', 'beetroot'];
+console.log(veggies) //['onion', 'parsley', 'carrot', 'beetroot']
+
+
+//Convert a string to an array using the spread operator:
+const greeting = "Hello";
+const arrayOfChars = [...greeting];
+console.log(arrayOfChars); //  ['H', 'e', 'l', 'l', 'o']
+
+//Copy either an object or an array into a separate one:
+const car1 = {
+    speed: 200,
+    color: 'yellow'
+}
+const car2 = {...car1}
+
+car1.speed = 201
+
+console.log(car1.speed, car2.speed) //201 200
+
+
+//Copy an array into a completely separate array using the spread operator:
+const fruits1 = ['apples', 'pears']
+const fruits2 = [...fruits1]
+fruits1.pop()
+console.log(fruits1, "not", fruits2) //['apples'] 'not' ['apples','pears']
+
+
+//----Rest property
+//You can end a destructuring pattern with a rest property ...rest. 
+//This pattern will store all remaining properties of the object or array 
+//into a new object or array.
+
+const { a, ...others } = { a: 1, b: 2, c: 3 };
+console.log(others); // { b: 2, c: 3 }
+
+const [first, ...others2] = [1, 2, 3];
+console.log(others2); // [2, 3]
+
+
+
