@@ -576,7 +576,7 @@ styleAndCelebrate('ef7c8e', 'fae8e0', '30px', 'You made it!','champions')
 */
 /*
 
-        //Template literals (`` + ${...}):
+        //----------Template literals (`` + ${...}):---------------
         const string1 = "A string primitive";
         const string2 = 'Also a string primitive';
         const string3 = `Yet another string primitive`;
@@ -742,7 +742,7 @@ console.log(uniqueFruits) //{'apple', 'pear', 'plum'}
 
 */
 
-
+/*
 
         //-------Using SPREAD and REST operators------------
 
@@ -801,6 +801,71 @@ console.log(others); // { b: 2, c: 3 }
 
 const [first, ...others2] = [1, 2, 3];
 console.log(others2); // [2, 3]
+
+*/
+
+
+
+
+//----Final assignment:--------
+
+
+// Given variables
+const dishData = [
+    {
+        name: "Italian pasta",
+        price: 9.55
+    },
+    {
+        name: "Rice with veggies",
+        price: 8.65
+    },
+    {
+        name: "Chicken with potatoes",
+        price: 15.55
+    },
+    {
+        name: "Vegetarian Pizza",
+        price: 6.45
+    },
+]
+const tax = 1.20;
+
+// Implement getPrices()
+function getPrices(taxBoolean) {
+    for (var dish of dishData) {
+        let finalPrice;
+        if (taxBoolean == true) {
+            finalPrice = dish.price * tax;
+        } else if (taxBoolean == false) {
+            finalPrice = dish.price;
+        } else {
+            console.log("You need to pass a boolean to the getPrices call!");
+            return;
+        }
+        console.log("Dish: " + dish.name + " Price: $" + finalPrice);
+    }
+}
+
+// Implement getDiscount()
+function getDiscount(taxBoolean, guests) {
+    getPrices(taxBoolean);
+    if (typeof(guests) == 'number' && guests > 0 && guests < 30) {
+        let discount = 0;
+        if (guests < 5) {
+            discount = 5;
+        } else if (guests >= 5) {
+            discount = 10;
+        }
+        console.log('Discount is: $' + discount);
+    } else {
+        console.log('The second argument must be a number between 0 and 30');
+    }
+}
+
+// Call getDiscount()
+getDiscount(true, 2);
+getDiscount(false, 10);
 
 
 
