@@ -1111,7 +1111,7 @@ better.calculate(); // Result: 6
 
 
 /*  
-    //For of loops and objects:
+    //-----------For of loops and objects:----------
 //a for of loop can be run on arrays to loop over objects; 
 //a for of loop cannot work on an object directly, since an object is not iterable.
 //Contrary to objects, arrays are iterable: 
@@ -1168,7 +1168,7 @@ testBracketsDynamicAccess();
 */
 
 
-        //FOR OF/FOR IN - LOOPS
+        //-------FOR OF/FOR IN - LOOPS---------
 
 const car = {
     engine: true,
