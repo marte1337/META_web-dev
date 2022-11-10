@@ -54,7 +54,6 @@
     <button type="submit">Book table</button>
   </form>
   </form>
-  <h1>Book a Table</h1>
   <h4>version 2</h4>
   <form method="POST">
     <div>
@@ -78,7 +77,6 @@
     </div>
     <button type="submit">Book table</button>
   </form>
-  <h1>Book a Table</h1>
   <h4>version 3</h4>
   <form>
     <div>
@@ -101,6 +99,37 @@
     </div>
     <button type="submit">Book Now</button>
 </form>
+<section>
+  <h1>About</h1>
+  <video width="320" height="240" controls muted>
+    <source src="menu.mp4" type="video/mp4">
+  </video>
+  <p>Little Lemon is a family-owned restaurant, focused on traditional stuff</p>
+  <audio loop controls>
+    <source src="music.ogg" type="audio/ogg">
+  </audio>
+</section>
+<section>
+  <h4>version 2 (rating)</h4>
+  <video controls width="320" height="240">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <form>
+    <div>
+      <label for="rating">Rating</label>
+      <input type="range" min="1" max="5" id="rating" name="rating" list="ratings">
+      <datalist id="ratings">
+          <option value="1" label="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5" label="5"></option>
+      </datalist>
+    </div>
+    <button type="submit">Submit Rating</button>
+  </form>
+</section>
   </main>
 </body>
 
