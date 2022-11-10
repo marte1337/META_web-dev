@@ -10,6 +10,10 @@ h1 {
     color:antiquewhite
 }
 
+canvas {
+    border: solid;
+}
+
 div h1 {
     color:darkolivegreen;
 }
@@ -29,4 +33,84 @@ form > div {
 
 input:focus:invalid {
     border: 2px solid red;
+}
+
+.flexbox-section {
+    border: solid;
+    width: 500px 
+}
+
+.box{
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+
+.flex-container2{
+    display: flex;
+}
+
+.flex-container3{
+    display: flex;
+    justify-content: center
+}
+
+.flex-container4{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-container5{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-container6{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:flex-end;
+}
+
+.flex-container7{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:flex-end;
+}
+.flex-container7 .box3{
+    background-color: blanchedalmond;
+    align-self: center;
+}
+
+.flex-container8{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:flex-end;
+    gap:10px;
+}
+.flex-container8 .box3{
+    background-color: blanchedalmond;
+    align-self: center;
+}
+
+.flex-container9{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    }
+
+.flex-container9 .box3{
+    background-color: blanchedalmond;
+    align-self: center;
+    flex: 1 1 auto;
 }

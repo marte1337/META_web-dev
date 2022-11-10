@@ -48,9 +48,123 @@
           </div>
         </form>
         <section>
-          <canvas width="640" height="480" id="my_canvas"></canvas>
+          <h3>Canvas Animation:</h3>
+          <canvas width="640" height="100" id="my_canvas"></canvas>
           <script src="animation.js"></script>
         </section>
+        <section class="flexbox-section">
+        <div class="flex-container"> 
+          <h2>CSS Flexcontainer</h2>
+          <h3>no flex:</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+        </div>
+        <div class="flex-container2"> 
+          <h3>display: flex</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          The output is now seven flex containers that run from left to right starting in the top left corner.
+        </div>
+        <div class="flex-container3"> 
+          <h3>+ justify-content: center</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+        </div>
+        <div class="flex-container4"> 
+          <h3>+ flex-wrap: wrap</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          The items will now be wrapped to the size of the available viewport. 
+        </div>
+        <div class="flex-container5"> 
+          <h3>+ flex-direction: column</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          The output looks like the original output; however, it is now actually a flex.
+        </div>
+        <div class="flex-container6"> 
+          <h3>+ align-items: flex-end</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          The term ‘end’ refers to the right side of the page as the left side is seen as the beginning. 
+        </div>
+        <div class="flex-container7"> 
+          <h3>+  align-self: center</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          This property can be used on individual items inside the flex.
+          Here the color and alignment of the third box have been changed and 
+          it overrides the properties set using align-items.     
+        </div>
+        <div class="flex-container8"> 
+          <h3>+ gap: 10px</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          gap property can be used to create space between the items along the main axis. 
+          You can also individually configure the gaps in rows and columns using row-gap and column-gap properties.   
+        </div>
+        <div class="flex-container9"> 
+          <h3>flex = flex-grow, flex-shrink and flex-basis</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          The values correspond to the three properties, namely the flex-grow set to 0, flex-shrink to 1 
+          and flex-basis to auto. The flex-basis sets the initial size of the container. and together they 
+          define the rigidity or flexibility and dynamism you want to add to the flexbox. <br>
+          To demonstrate the effect of this, the code has to be modified slightly by removing the flex-direction value 
+          set to ‘column’. This will change it to default ‘row’ and the output will again be centrally aligned and 
+          horizontal best-distributed between two rows. <br>
+          The rest of the remaining code is unchanged. However, the output will change if the code is modified with 
+          the addition of the flex property inside the flex item box3 class. <br>
+          The third box now takes up the entire free space available because flex-growth’s value has been set to 1. 
+          So if we have flex-grow set to 1, the children will all set to equal size. And if one of the children has a 
+          value of 1.5, that child would take up more space as compared to the others. 
+        </div>
+      </section>
     </body>
 
 </html>
