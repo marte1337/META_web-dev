@@ -1,0 +1,220 @@
+---------CSS units of measurement-----------
+
+Frequently used ABSOLUTE units:
+
+px      Pixels      1px = 1/96th of 1in
+cm      Centimeters 1cm = 37.8px = 25.2/64in
+
+
+
+Most important RELATIVE units:
+
+em      Font size of the parent where present.
+
+ex      x-co-ordinate or height of the font element.
+
+ch      Width of the font character.
+
+rem     Font size of the root element.
+
+lh      Value computed for line height of parent element. 
+
+rlh     Value computed for line height of root element which is <html>. 
+
+vw      1% of the viewport width.
+
+vh      1% of the viewport height.
+
+vmin    1% of the smaller dimension of viewport.
+
+vmax    1% of the larger dimension of viewport.
+
+%       Denotes a percentage value in relation to its parent element. 
+
+
+Given the dynamic nature of web pages today and the variable size of devices in use, relative units are the go-to option in many cases.
+Many of these units are used in terms of the relative size of fonts. Some units are more suitable depending on the relative context. 
+Like when the dimensions of the viewport are important, it's more appropriate to use vw and vh. In a broader context, the relative 
+units you will see most frequently used are percentage, em, vh, vw and rem.  
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+
+------------Grids and flexbox cheat sheet------------
+
+Note: ‘|’ stands for alternatives or OR.
+
+
+---------- GRID ---------- 
+
+The syntax for creating a grid:
+
+selector{
+display: grid| inline-grid
+}
+
+
+Grid shorthand consists of the following properties with default values:
+
+grid:
+
+grid-template-rows: none
+
+grid-template-columns: none
+
+grid-template-areas: none
+
+grid-auto-rows: auto
+
+grid-auto-columns: auto
+
+grid-auto-flow: row
+
+grid-column-gap: 0
+
+grid-row-gap: 0
+
+column-gap: normal
+
+row-gap: normal
+
+
+
+--- Grid properties for container ---
+
+grid-template-columns: measurement units | % units |repeat()
+
+grid-template-rows: measurement units | % units |repeat()
+
+grid-auto-columns: measurement unit (fixed value for all columns)
+
+grid-auto-rows: measurement unit (fixed value for all rows) OR f.e. minmax(150px, auto)
+
+grid-template: “header header” auto
+
+“main right” 75vh
+
+“footer footer” 20rem
+
+grid-template-areas: “header header”
+
+“main right”
+
+“footer footer”
+
+
+
+--- Gap ---
+
+grid-gap: measurement units
+
+grid-column-gap: measurement units
+
+grid-row-gap: m-unit-1  m-unit-2
+
+
+
+--- Alignment ---
+
+justify-items: start | center | end | stretch
+
+align-items: start | center | end | stretch
+
+place-items: start | stretch /* shorthand for two properties above */
+Justification
+
+justify-content: start | center | end | stretch | space-between | space-evenly | space-around
+
+align-content: start | center | end | stretch | space-between | space-evenly | space-around
+
+place-content: center | start
+
+
+
+--- Positioning ---
+
+grid-auto-flow: row | column | dense
+
+grid-auto-columns: measurement units
+
+grid-auto-rows: measurement units
+
+
+
+--- Grid properties for items (child) ---
+
+grid-column: column position /* E.g. 1/2  */
+
+grid-column-start: column start position
+
+grid-column-end: column end position
+
+
+grid-row:  row position /* E.g. 1/2  */
+
+grid-row-start: row start position
+
+grid-row-end: row end position
+
+
+grid-area: “some name” |  /*E.g.  2/1/3/2 */ /* Shorthand for row-column properties above. 
+
+
+
+--- Justification and alignment ---
+
+justify-self: start | center | end | stretch
+
+align-self: start | center | end | stretch
+
+place-self: start | stretch /* shorthand for two properties above */
+
+
+
+
+-------- FLEXBOX ----------
+
+The syntax for creating a flexbox:
+
+selector{
+display: flex | inline-flex
+}
+
+
+
+--- Properties for flexbox container ---
+
+flex-direction: row | row-reverse | column | column-reverse
+
+flex-wrap: wrap | nowrap
+
+align-items: flex-start | flex-end | center | stretch
+
+justify-content: flex-start | flex-end | center | space-between | space-evenly | space-around
+
+
+
+--- Properties for flexbox items (child) ---
+
+--Shorthand:--
+
+flex:
+
+flex-grow: factor of flex’s main size    /* E.g. 1 */
+
+flex-shrink: factor of flex’s main size    /* E.g. 0 */
+
+flex-basis: auto | factor of main’s size | measurement unit
+
+
+order:position in flex /* Set ascending by default */
+
+
+align-self:  start | center | end | stretch
+
+
+---------------------------------------------------------------------------------------------------------
