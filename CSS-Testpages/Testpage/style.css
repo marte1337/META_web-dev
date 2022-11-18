@@ -63,7 +63,7 @@ div h1 {
     transition: 5s;
 }
 
-.box1,.box2,.box3{
+.box_1,.box_2,.box_3{
     display: grid;
     width: 240px;
     height: 240px;
@@ -75,25 +75,130 @@ div h1 {
 }
 
 
-.box1:hover{
+.box_1:hover{
     transform: rotateZ(60deg);
     background-color: cyan;
     opacity: 70%;
     transition: 2s;
 }
 
-.box2:hover{
+.box_2:hover{
     transform: rotateY(60deg);
     background-color: cyan;
     opacity: 70%;
     transition: 2s;
 }
 
-.box3:hover{
+.box_3:hover{
     transform: rotateX(60deg) rotateY(60deg) rotateZ(60deg);
     background-color: cyan;
     opacity: 70%;
     transition: 2s;
+}
+
+
+
+.container {
+	min-height: 100vh;
+	background-color:bisque;
+    padding: 0;
+	margin: 0;
+	color: pink;
+}
+  
+.letters {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	text-transform:uppercase;
+	font-size: 60px;
+}
+
+.letters p{
+	text-align: center;
+	background-color: rgb(250, 150, 100);
+	width: 70px;
+	margin-right: 1.5px;
+	border-radius: 15%;
+	border-color: rgb(250, 125, 75);
+	border-style: solid;
+}
+
+.letters:hover p:nth-child(even) {
+    transform: rotateY(360deg);
+    transition: 0.5s;
+  }
+  
+  .letters:hover p:nth-child(odd) {
+    transform: rotateX(360deg);
+    transition: 1.5s;
+  }
+  
+
+
+.keyframe{
+    height: 300px;
+    margin-top: 50px;
+}
+
+.keyframe_box1{ 
+    padding:30px;
+    background-color: lightcoral; 
+    width: 50px; 
+    height: 50px; 
+    animation: myanimation 3s infinite ease-in; 
+} 
+    
+@keyframes myanimation{ 
+    from{width: 50px;} 
+    to{width: 100px;} 
+} 
+
+
+.keyframe_box2{ 
+    padding:30px;
+    margin-top: 10px;;
+    background-color: lightcoral; 
+    width: 50px; 
+    height: 50px; 
+    animation: myanimation2 3s infinite ease-in; 
+} 
+    
+@keyframes myanimation2{ 
+    0%{width: 50px;
+    }
+    50%{background-color: aquamarine;
+        height: 20px;
+    }
+    100%{width: 100px;
+    }
+} 
+
+
+.CSSball {
+    border: solid;
+    padding: 10px;
+}
+
+#ball {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #62687f;
+
+    animation: bounce 2s linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(640px, 0, 0);
+    }
 }
 
 
