@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <h1 id="header1">Test Page</h1>
+        Testing...
+        <h1>Test Page</h1>
+        Testing...
+        <h1>Test Page</h1>
+        Testing...
+        <div id="blog">
+            <h1>Latest News</h1>
+            <div>
+              <h1>Today's Weather</h1>
+              <p>The weather will be sunny</p>
+            </div>
+            <p>Subscribe for more news</p>
+        </div>
+        <div>
+          <h1>Archives</h1>
+          <br>
+          <br>
+          <br>
+        </div>
+
+        <section>
+          <div>
+            <h2>ANIMATION</h2>
+            <div class="a">ANI</div>
+            <div class="b">MATION</div>
+          </div>
+          <div class="box_1">BOX 1: rotate Z</div>
+          <div class="box_2">BOX 2: rotate Y</div>
+          <div class="box_3">BOX 3: rotate XYZ</div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="letters">
+                <p>D</p>
+                <p>o</p>
+                <p>n</p>
+                <p>t</p>
+            </div>
+            <div class="letters">
+                <p>W</p>
+                <p>o</p>
+                <p>r</p>
+                <p>r</p>
+                <p>y</p>
+            </div>
+            <div class="letters">
+                <p>B</p>
+                <p>e</p>
+            </div>
+            <div class="letters">
+                <p>H</p>
+                <p>a</p>
+                <p>p</p>
+                <p>p</p>
+                <p>y</p>
+            </div>
+        </div>
+        </section>
+
+        <section class="keyframe">
+          <h3>Keyframe Animation:</h3>
+          <div class="keyframe_box1"></div> 
+          <div class="keyframe_box2"></div> 
+        </section>
+       
+        <h3>Keyframe CSS Animation:</h3>
+        <section class="CSSball">
+          <div id="ball"></div>
+        </section>
+
+        <section>
+          <h3>Canvas JS Animation:</h3>
+          <canvas width="640" height="100" id="my_canvas"></canvas>
+          <script src="animation.js"></script>
+        </section>
+
+
+        <section class="flexbox-section">
+        <div class="flex-container"> 
+          <h2>CSS Flexcontainer</h2>
+          <h3>no flex:</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+        </div>
+        <div class="flex-container2"> 
+          <h3>display: flex</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          The output is now seven flex containers that run from left to right starting in the top left corner.
+        </div>
+        <div class="flex-container3"> 
+          <h3>+ justify-content: center</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+        </div>
+        <div class="flex-container4"> 
+          <h3>+ flex-wrap: wrap</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          The items will now be wrapped to the size of the available viewport. 
+        </div>
+        <div class="flex-container5"> 
+          <h3>+ flex-direction: column</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          The output looks like the original output; however, it is now actually a flex.
+        </div>
+        <div class="flex-container6"> 
+          <h3>+ align-items: flex-end</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          The term ‘end’ refers to the right side of the page as the left side is seen as the beginning. 
+        </div>
+        <div class="flex-container7"> 
+          <h3>+  align-self: center</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          This property can be used on individual items inside the flex.
+          Here the color and alignment of the third box have been changed and 
+          it overrides the properties set using align-items.     
+        </div>
+        <div class="flex-container8"> 
+          <h3>+ gap: 10px</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          gap property can be used to create space between the items along the main axis. 
+          You can also individually configure the gaps in rows and columns using row-gap and column-gap properties.   
+        </div>
+        <div class="flex-container9"> 
+          <h3>flex = flex-grow, flex-shrink and flex-basis</h3>
+          <div class="box box1">  One..</div>
+          <div class="box box2">  Two..</div>
+          <div class="box box3">  Three..</div>
+          <div class="box box4">  Four..</div>
+          <div class="box box5">  Five..</div>
+          <div class="box box6">  Six..</div>
+          <div class="box box7">  Seven..</div>
+          The values correspond to the three properties, namely the flex-grow set to 0, flex-shrink to 1 
+          and flex-basis to auto. The flex-basis sets the initial size of the container. and together they 
+          define the rigidity or flexibility and dynamism you want to add to the flexbox. <br>
+          To demonstrate the effect of this, the code has to be modified slightly by removing the flex-direction value 
+          set to 'column'. This will change it to default 'row' and the output will again be centrally aligned and 
+          horizontal best-distributed between two rows. <br>
+          The rest of the remaining code is unchanged. However, the output will change if the code is modified with 
+          the addition of the flex property inside the flex item box3 class. <br>
+          The third box now takes up the entire free space available because flex-growth's value has been set to 1. 
+          So if we have flex-grow set to 1, the children will all set to equal size. And if one of the children has a 
+          value of 1.5, that child would take up more space as compared to the others. 
+        </div>
+      </section>
+
+
+      <section>
+        <div class="container_search">
+          <input class="searchBox" type="search" name="search"  placeholder="Enter text here...">
+          <input class="searchButton" type="submit" value="Search">
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="label">Preferred dishes:</div>
+          <div class="container_dish">
+            <div class="dish pasta" style="flex-basis: 35%;">35%</div>
+            <div class="dish pizza" style="flex-basis: 50%;">50%</div>
+            <div class="dish burrito" style="flex-basis: 15%;">15%</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>GRID-LAYOUT</h2>
+        <div class="parent">
+          <div class="segment twelve">Span 12</div>
+          <div class="segment eight">Span 8</div>
+          <div class="segment four">Span 4</div>
+          <div class="segment six">Span 6</div>
+          <div class="segment seven">Span 7</div>
+          <div class="segment twelve">Span 12</div>
+        </div>
+      </section>
+
+      <h2>GRID TEMPLATE AREA</h2>
+      <section class="grid-template-area">
+        <header> Header </header> 
+        <nav class="nav-bar"> Navigation </nav> 
+        <main> Main area:<br><br>
+          Grid areas are a way to group one or more grid cells. The grid template area is an extension of this concept where you can give names to these grid areas. Once you have the names defined, you can address these new grid area items by their names and configure them accordingly. 
+          The property grid-template-areas is usually placed inside the body tag or any container where the grid needs to be placed, the same way that you would define the rules for the grid. The main difference is, in case of grid-template-areas the values present will be the different names. 
+          <br>
+          The process isn’t prescriptive but these are the steps in general:<br>
+          1. Define the grid using display property <br>
+          2. Set the height and width of the grid <br>
+          3. Set the grid-template-areas with the appropriate name identifiers<br>
+          4. Add the appropriate sizes for the rows inside the grid using grid-template-rows property <br>
+          5. Add the appropriate sizes for the columns inside the grid using grid-template-columns property <br>
+          <br>
+          The names that you use inside the grid template areas are the HTML tags that you have used. Or, where you need to get more specific, you designate a class name to these tags. Once the names are assigned, you define the properties for each class the same way that you define them conventionally. Let's examine an example.
+          <br>
+          Though there are five sets of rules, logically the CSS code is divided into two sections. The first is where you define the rules for the grid inside the body selector. And second is where you allocate specific rules for the different grid areas. The way these grid areas are distributed is according to how you have defined the names inside the grid-template-areas property.
+          <br>The ‘head’ is written twice to imply two columns and the rest of the content follows the usual convention. The number of rows will be the number of ‘pairs of quotes’ you have used which in this case is three. Namely  “head head”, “nav main” and “footer footer”. Once you know the number of rows and columns, the values for those will be set by grid-template-rows and grid-template-columns. Since these are three and two respectively here, you need to add that many values. The height simply gives the overall value of the height for the grid. 
+          Note that the number of times you wrote “header” did not have to be two. You could write more of those and if you align the rest of the grid-names correctly, the height and width of the grid-areas will be distributed proportionately. 
+          <br>The output will remain the same as you have fixed the value of the third row to “30px”. The example is simple for the sake of clarity, but if you had used relative values, you would’ve seen an observable change in the comparable sizes of nav and main grid-areas. 
+          Grid-areas are convenient when you have a clear schematic of what you want in a grid. It’s also easier to configure individual areas if you can address them by their names. Let’s say you are designing a resume on your website, you will be able to name the different areas such as ‘Bio’, ‘Education’, ‘Work experience’ and so on. And it’s easier to use these labels when you are defining the rules. Creating a block diagram using pen and paper before starting to work on a grid is always a good idea. 
+        </main> 
+        <footer> Footer </footer> 
+      </section>
+    </body>
+
+</html>

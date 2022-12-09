@@ -1,0 +1,425 @@
+body {
+    background-color: rgb(211, 210, 213);
+}
+
+section {
+    margin: 20px auto 20px auto;
+}
+
+h1 {
+    color:rgb(126, 99, 163);
+}
+
+#header1 {
+    color:antiquewhite
+}
+
+
+div h1 {
+    color:rgb(204, 251, 195);
+}
+
+#blog {
+    background-color: black;
+    max-width: 190px;
+    padding: 20px 15px 20px 10px;
+    margin-top: 1em;
+    text-align: center;
+}
+
+#blog p {
+    color: aliceblue;
+}
+
+#blog div h1 {
+    color:aqua;
+}
+
+#blog > h1 {
+    color:chartreuse;
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 31px #fff,
+    0 0 55px rgb(255, 227, 4),
+    0 0 91px rgb(255, 227, 4),
+    0 0 100px rgb(255, 227, 4),
+    0 0 122px rgb(255, 227, 4),
+    0 0 140px rgb(255, 227, 4);
+}
+
+
+/* ANIMATION */
+
+.a {
+    margin: 30px;
+    transform: skewX(30deg);
+    transition: 5s;
+}
+
+.b {
+    margin: 100px;
+    transform: rotate(28deg);
+    transition: 5s;
+}
+
+.box_1,.box_2,.box_3{
+    display: grid;
+    width: 240px;
+    height: 240px;
+    margin: 100px;
+    background-color: rgb(201, 39, 230);
+    border-radius: 12px;
+    border: solid rgb(130, 255, 47) 4px;
+    justify-content:space-around;
+}
+
+
+.box_1:hover{
+    transform: rotateZ(60deg);
+    background-color: cyan;
+    opacity: 70%;
+    transition: 2s;
+}
+
+.box_2:hover{
+    transform: rotateY(60deg);
+    background-color: cyan;
+    opacity: 70%;
+    transition: 2s;
+}
+
+.box_3:hover{
+    transform: rotateX(60deg) rotateY(60deg) rotateZ(60deg);
+    background-color: cyan;
+    opacity: 70%;
+    transition: 2s;
+}
+
+
+
+.container {
+	min-height: 100vh;
+	background-color:bisque;
+    padding: 0;
+	margin: 0;
+	color: pink;
+}
+  
+.letters {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	text-transform:uppercase;
+	font-size: 60px;
+}
+
+.letters p{
+	text-align: center;
+	background-color: rgb(250, 150, 100);
+	width: 70px;
+	margin-right: 1.5px;
+	border-radius: 15%;
+	border-color: rgb(250, 125, 75);
+	border-style: solid;
+}
+
+.letters:hover p:nth-child(even) {
+    transform: rotateY(360deg);
+    transition: 0.5s;
+  }
+  
+  .letters:hover p:nth-child(odd) {
+    transform: rotateX(360deg);
+    transition: 1.5s;
+  }
+  
+
+
+.keyframe{
+    height: 300px;
+    margin-top: 50px;
+}
+
+.keyframe_box1{ 
+    padding:30px;
+    background-color: lightcoral; 
+    width: 50px; 
+    height: 50px; 
+    animation: myanimation 3s infinite ease-in; 
+} 
+    
+@keyframes myanimation{ 
+    from{width: 50px;} 
+    to{width: 100px;} 
+} 
+
+
+.keyframe_box2{ 
+    padding:30px;
+    margin-top: 10px;;
+    background-color: lightcoral; 
+    width: 50px; 
+    height: 50px; 
+    animation: myanimation2 3s infinite ease-in; 
+} 
+    
+@keyframes myanimation2{ 
+    0%{width: 50px;
+    }
+    50%{background-color: aquamarine;
+        height: 20px;
+    }
+    100%{width: 100px;
+    }
+} 
+
+
+.CSSball {
+    border: solid;
+    padding: 10px;
+}
+
+#ball {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #62687f;
+
+    animation: bounce 2s linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(640px, 0, 0);
+    }
+}
+
+
+
+canvas {
+    border: solid;
+}
+
+/* FLEXBOX */
+
+.flexbox-section {
+    border: solid;
+    width: 500px 
+}
+
+.box{
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+
+.flex-container2{
+    display: flex;
+}
+
+.flex-container3{
+    display: flex;
+    justify-content: center
+}
+
+.flex-container4{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-container5{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-container6{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:flex-end;
+}
+
+.flex-container7{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:flex-end;
+}
+.flex-container7 .box3{
+    background-color: blanchedalmond;
+    align-self: center;
+}
+
+.flex-container8{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:flex-end;
+    gap:10px;
+}
+.flex-container8 .box3{
+    background-color: blanchedalmond;
+    align-self: center;
+}
+
+.flex-container9{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    }
+
+.flex-container9 .box3{
+    background-color: blanchedalmond;
+    align-self: center;
+    flex: 1 1 auto;
+}
+
+
+
+.container_search {
+    display: inline-flex;
+    flex: 1 1 300px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.searchBox {
+    border: 0;
+    flex: 1;
+}
+
+.searchButton {
+    color: white;
+    background: #0f4a8a;
+    border: 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+
+}
+
+
+
+.row {
+    display: flex;
+    align-items: stretch;
+}
+
+.row .label {
+    flex: 0 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row .container_dish {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row .dish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pasta {
+    background-color: rgb(255, 234, 1);
+}
+
+.pizza {
+    background-color: green;
+}
+
+.burrito {
+    background-color: red;
+}
+
+
+
+/* GRID-LAYOUT */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.segment {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    grid-template-rows: 100px;
+}
+
+.twelve {
+    background-color: lightseagreen;
+    grid-column: 1/ span 12;
+}
+
+.eight {
+    background-color: bisque;
+    grid-column: 5/ span 8;
+}
+
+.four {
+    background-color: lightblue;
+    grid-column: 1/ span 4;
+}
+
+.six {
+    background-color: lightsteelblue;
+    grid-column: 5/ span 6;
+}
+
+.seven {
+    background-color: lightcoral;
+    grid-column: 3/ span 7;
+}
+
+
+
+/* GRID TEMPLATE AREA */
+
+.grid-template-area {
+    display: grid; 
+    height: 200px; 
+    grid-template-areas: "head head head" 
+                        "nav  main main" 
+                        "footer  footer footer"; 
+    grid-template-rows: 30px 1fr 30px; 
+    grid-template-columns: 150px 1fr;    
+}
+
+header { 
+    grid-area: head; 
+    background-color: lightsalmon; 
+} 
+
+.nav-bar { 
+    grid-area: nav; 
+    background-color: lightblue; 
+} 
+
+main { 
+    grid-area: main; 
+    background-color: lightyellow; 
+} 
+
+footer { 
+    grid-area: footer; 
+    background-color: firebrick; 
+} 

@@ -1,0 +1,121 @@
+/* Properties for other selectors */
+*{
+    font-family: Monaco;
+}
+
+.menu, .ll{
+    text-align: center;
+    color:#FA9F42;
+}
+
+.ll{
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #495E57;
+}
+
+.menu-container {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    background-color:#E0E0E2;
+}
+
+
+/* Add rules for the steps mentioned below */
+
+.section {
+	padding: 10px;
+}
+
+.label {  
+	font-weight: bold;
+}
+
+.description {
+    font-style: italic;
+    border-top: 2px solid #495E57;
+}
+
+.item-name {
+	margin: 25px;
+	font-size: 12px;
+}
+
+
+b {
+    float: right;
+    margin-top: -15px;
+    color: darkcyan; 
+}
+
+div > h3 {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+    color: #495E57;
+}
+
+.label + .low {
+    color: brown; 
+}
+
+div ~ div {
+    color: rgb(90, 90, 90);
+}
+
+
+
+.label::first-letter { 
+    color:coral; 
+    font-size: 1.3em; 
+    font-weight: bold; 
+    line-height: 1;   
+} 
+
+
+div::selection {
+    color:brown;
+    background-color: antiquewhite;
+    line-height: 1;
+}
+
+.low::before{
+    background: darkkhaki;
+    color:darkslategray;
+    content: "Tip:";
+    padding-left: 3px;
+    padding-right: 5px;
+    border-radius: 10%;
+}
+
+.low::after{
+    background:darkkhaki;
+    color:darkslategray;
+    content: "!!";
+    padding-right: 5px;
+    border-radius: 20%;
+}  
+
+
+
+a:link {
+    color: rgb(255, 0, 153);
+}
+
+a:visited {
+    color: aqua;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: black;
+    background-color: darkviolet;
+}
+
+.item-name:hover {
+    box-shadow: 5px 0px 25px black;
+}

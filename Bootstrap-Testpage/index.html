@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body style="border: solid; margin: 0.5em; padding: 00.5em;">
+    <h1>Hello, world!</h1>
+    <div class="alert alert-primary text-center" role="alert">
+        BS-kein Container
+    </div>
+    <div class="row text-center mb-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+            Was auch immer er labert
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+            Was auch immer er labert
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+            Was auch immer er labert
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+            Was auch immer er labert
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+            Was auch immer er labert
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+            Was auch immer er labert
+        </div>
+    </div>
+      
+    <div class="container">
+        <div class="alert alert-primary" role="alert">
+            BS-Container
+            <div class="alert alert-danger" role="alert">
+                A simple danger alert—check it out!
+                <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert—check it out!
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12 col-sm-6 col-lg-3">
+                Was auch immer er labert
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                Was auch immer er labert
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                Was auch immer er labert
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                Was auch immer er labert <span class="badge bg-danger">New</span>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                Was auch immer er labert
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                Was auch immer er labert 
+            </div>
+        </div>
+        <div class="row mt-4">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item  col-12 col-sm-6 float-start">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item col-12 col-sm-6 float-start">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="border border-primary p-4 m-2">
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-warning position-relative">Warning<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+</span></button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+        <div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://m.media-amazon.com/images/I/719c6m385vL._AC_SX679_.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://m.media-amazon.com/images/I/81LY-bhRXSL._AC_SL1500_.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://m.media-amazon.com/images/I/71EqBdHHejL._AC_SL1500_.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="card float-start" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/71EqBdHHejL._AC_SL1500_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            <div class="card float-start" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/71EqBdHHejL._AC_SL1500_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            <div class="card float-start" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/71EqBdHHejL._AC_SL1500_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>  
+
+          
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
