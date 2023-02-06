@@ -6,15 +6,17 @@ import Intro3 from './components/Intro3';
 import Promo from './components/Promo';
 import Footer from './components/Footer';
 import { Bag, Apples, Pears } from './components/Bag'; // = Named-Export/Import
+import Btn from './components/Btn';
+
 
 //Heading-Component
 function Heading(props) {
   return (<div>
           <h1>This is a random number between 1 and 10: { Math.floor(Math.random() * 10) + 1 }</h1>
           {props.newLine}
+          <p>And it is {props.date}</p>
           </div>
   )
-  
 }
 
 //You can pass almost any kind of expression as a prop.
@@ -37,6 +39,9 @@ function ExprProps(props) {
 
 
 function App() {
+
+  const date = new Date()
+
   return ( 
     <div className="App"> 
       <Heading newLine={<h3>This is a new line via props</h3>}/> 
@@ -68,6 +73,9 @@ function App() {
           math={(10 + 20) / 3}
           str={str1 + ' another ' + 'string'}
         />
+      </div>
+      <div>
+        <Btn />
       </div>
     </div> 
   ); 
