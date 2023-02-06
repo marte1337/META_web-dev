@@ -10,11 +10,13 @@ import Btn from './components/Btn';
 
 
 //Heading-Component
+const date = new Date()
+
 function Heading(props) {
   return (<div>
-          <h1>This is a random number between 1 and 10: { Math.floor(Math.random() * 10) + 1 }</h1>
+          <h1>"{props.number}" is a random number between 1 and 10</h1>
           {props.newLine}
-          <p>And it is {props.date}</p>
+          <p>And it is {props.time} of the {props.date}</p>
           </div>
   )
 }
@@ -40,11 +42,15 @@ function ExprProps(props) {
 
 function App() {
 
-  const date = new Date()
 
   return ( 
     <div className="App"> 
-      <Heading newLine={<h3>This is a new line via props</h3>}/> 
+      <Heading 
+      number={ Math.floor(Math.random() * 10) + 1 } 
+      newLine={<h3>This is a new line via props</h3>} 
+      time={date.toLocaleTimeString()} 
+      date={date.toLocaleDateString()}
+      /> 
       <div>
         <Nav />
         <Intro1 />
