@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+
+.Field1, .Field2, .Field3 {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-bottom: 5vh;
+}
+.Field1, .Field3 {
+  background-color: #282c34;
+}
+.Field2 {
+  background-color: #8a2fcb;
+}
+
+/* need fix */
+.Field1 button {
+  display: inline;
+}
+
+.App-link {
+  color: #61dafb;
+}
