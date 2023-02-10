@@ -11,7 +11,7 @@ function FruitApp() {
   ]);
 
   return (
-    <div className="App">
+    <div className="Field2">
       <h1>Fruits-Counter (useState)</h1>
       <Fruits fruits={fruits} />
       <FruitsCounter fruits={fruits} />
